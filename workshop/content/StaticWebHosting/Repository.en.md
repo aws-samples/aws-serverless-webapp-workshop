@@ -10,47 +10,54 @@ weight = 20
 
 We will use [AWS CodeCommit][codecommit] to host your site's repository. CodeCommit is included in the [AWS Free Tier][codecommit-free-tier].
 
-#### Using CodeCommit
-The AWS Cloud9 development environment comes with AWS managed temporary credentials that are associated with your IAM user. You use these credentials with the AWS [git-remote-codecommit][git-remote-codecommit] tool (A Git Remote Helper that makes it easier to interact with AWS CodeCommit). This tool is installed in Cloud9 by default. You can install it on your own machine by running the following command in a terminal:
+#### CodeCommit helper
+The AWS Cloud9 development environment comes with AWS managed temporary credentials that are associated with your IAM user. You use these credentials with the AWS [git-remote-codecommit][git-remote-codecommit] tool (A Git Remote Helper that makes it easier to interact with AWS CodeCommit). This tool is installed in Cloud9 by default. You can install it on your own machine by following the [installation instructions][codecommit-helper-installation].
 
-```bash
-sudo pip install git-remote-codecommit
-```
-Next you need to create the repository and clone it to your Cloud9 environment:
+#### Setting up your CodeCommit repository
 
-```bash
-aws codecommit create-repository \
-  --repository-name wild-rydes
-```
-
-1.  Clone the template repository using `git clone --bare`.
+1.  First, create a new CodeCommit repository:
     ```
-    git clone --bare https://github.com/bls20AWS/wildRydesVue.git
+    aws codecommit create-repository \
+      --repository-name wild-rydes
     ```
-1. `push --mirror` to your new repository.
+1.  Clone the existing (not new) workshop repository from GitHub:
     ```
-    cd wildRydesVue.git
-    git push --mirror codecommit://wild-rydes
+    git clone https://github.com/aws-samples/aws-serverless-webapp-workshop.git
     ```
-1. Remove the temporary local repository you created in step2
+1.  Change into the workshop repository directory:
     ```
-    cd ..
-    rm -rf wildRydesVue.git
+    cd aws-serverless-webapp-workshop
     ```
-1.  Clone the new repository to your Development environment
+1.  Split out the _WildRydesVue_ code into its own branch:
     ```
-    git clone codecommit://wild-rydes
+    git subtree split -P resources/code/WildRydesVue -b WildRydesVue
     ```
-1.  Make sure you're on the `master` branch
+1.  Create a new directory for your CodeCommit repo:
     ```
-    aws codecommit update-default-branch \
-    --repository-name wild-rydes \
-    --default-branch-name master
-
-    cd wild-rydes
-    git checkout master
+    md ../WildRydesVue && cd ../WildRydesVue
+    ```
+1.  Initialize a new git repository:
+    ```
+    git init
+    ```
+1.  Pull the _WildRydesVue_ branch into your new repo:
+    ```
+    git pull ../aws-serverless-webapp-workshop WildRydesVue
+    ```
+1.  Add your CodeCommit repository as a remote:
+    ```
+    git remote add origin codecommit://wild-rydes
+    ```
+1.  Push the code to your new CodeCommit repository:
+    ```
+    git push -u origin master
+    ```
+1.  Remove the temporary local repository you created in step 2:
+    ```
+    rm -rf ../aws-serverless-webapp-workshop
     ```
 
 [codecommit]: https://aws.amazon.com/codecommit/
 [codecommit-free-tier]: https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&all-free-tier.q=CodeCommit&all-free-tier.q_operator=AND
+[codecommit-helper-installation]: https://github.com/aws/git-remote-codecommit#set-up
 [git-remote-codecommit]: https://github.com/aws/git-remote-codecommit
