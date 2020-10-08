@@ -1,0 +1,43 @@
+copyright = "Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved."
+spdx-license-identifier = "CC-BY-SA-4.0"
+
+baseURL = "https://webapp.serverlessworkshops.io"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Wild Rydes Web Application"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+uglyurls = false
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+enableEmoji = true
+
+[params]
+  description = "Wild Rydes Web Application"
+  author = "Ben Smith"
+  disableBreadcrumb = false
+  disableNextPrev = false
+  themeVariant = "aws"
+  disableSearch = false
+  disableAssetsBusting = true
+  disableLanguageSwitchingButton = false
+  disableShortcutsTitle = true
+  disableInlineCopyToClipBoard = true
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
+[Languages]
+[Languages.en]
+  title = "Wild Rydes Web Application"
+  weight = 1
+  languageName = "English"

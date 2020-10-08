@@ -1,0 +1,6 @@
+node_modules
+workshop/public
+public
+packaged.yaml
+resources/_gen
+.DS_Store
