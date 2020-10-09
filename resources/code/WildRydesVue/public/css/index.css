@@ -1,0 +1,40 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+/* Generic */
+
+.page-auth{
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  font-family: "fairplex-wide";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Logo */
+
+header{
+  width: 100vw;
+  padding: 30px 0 100px;
+}
+
+header img{
+  margin: 0 auto;
+  display: block;
+}
+
