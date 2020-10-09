@@ -31,3 +31,6 @@ dist/
 node_modules/
 aws-exports.js
 awsconfiguration.json
+
+# Package lock file (to avoid pinning to vulnerable versions)
+package-lock.json
