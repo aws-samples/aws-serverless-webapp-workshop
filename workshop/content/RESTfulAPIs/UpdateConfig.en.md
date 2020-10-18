@@ -11,6 +11,8 @@ Update the _/src/config.js_ file in your website deployment to include the invok
 
 **:white_check_mark: Step-by-step directions**
 
+1. Copy the endpoint URL from your API details 
+![Endpoint](/images/endpoint-url.png)
 1. On your Cloud9 development environment open `src/config.js`
 1. Update the **invokeUrl** setting under the **api** key in the config.js file. Set the value to the **Invoke URL** for the deployment stage your created in the previous section.
 
@@ -20,7 +22,7 @@ An example of a complete `config.js` file is included below.
 ```JavaScript
 module.exports = {
     api: {
-        invokeUrl: 'https://rfk14x9w40.execute-api.us-east-1.amazonaws.com/prod'
+        invokeUrl: 'https://rfk14x9w40.execute-api.us-east-1.amazonaws.com/'
     }
 }
 ```
