@@ -29,4 +29,4 @@ Rather than configuring each service through a constructor or constants file, Am
 
 :heavy_exclamation_mark:  You won't see updates to this file in your local file store because it is included in the _.gitignore_ file.
 
-[cognito-console]: https://console.aws.amazon.com/cognito/users?home
+[cognito-console]: https://console.aws.amazon.com/cognito/home
