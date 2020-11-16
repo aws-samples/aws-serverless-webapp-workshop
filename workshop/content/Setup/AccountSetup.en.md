@@ -13,6 +13,7 @@ Use a single region for the duration of this workshop. This workshop supports th
 - us-west-2 (US West - Oregon)
 - us-east-2 (US East - Ohio)
 - us-east-1 (US East - Northern Virginia)
+- eu-central-1 (Europe - Frankfurt)
 
 Please select one of these in the top right corner.
 
