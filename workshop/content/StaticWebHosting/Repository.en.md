@@ -34,7 +34,7 @@ The AWS Cloud9 development environment comes with AWS managed temporary credenti
     ```
 1.  Create a new directory for your CodeCommit repo:
     ```
-    mkdir ../WildRydesVue && cd ../WildRydesVue
+    mkdir ../wild-rydes && cd ../wild-rydes
     ```
 1.  Initialize a new git repository:
     ```
