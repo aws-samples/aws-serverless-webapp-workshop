@@ -30,6 +30,7 @@ The AWS Cloud9 development environment comes with AWS managed temporary credenti
     ```
 1.  Split out the _WildRydesVue_ code into its own branch:
     ```
+    sudo yum install git-subtree -y
     git subtree split -P resources/code/WildRydesVue -b WildRydesVue
     ```
 1.  Create a new directory for your CodeCommit repo:

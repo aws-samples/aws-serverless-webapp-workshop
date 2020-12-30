@@ -35,7 +35,7 @@ If you get an ` Authentication Error  ` this is likely because your changes have
 
     1. From the AWS console, click Services then select **Cognito** under Security, Identity & Compliance.
     1. Choose **Manage your User Pools**
-    1. Select the `WildRydes` user pool and click **Users and groups** in the left navigation bar.
+    1. Select the user pool prefixed with `wildrydes` and click **Users and groups** in the left navigation bar.
     1. You should see a user corresponding to the email address that you submitted through the registration page. Choose that username to view the user detail page.
     1. Choose **Confirm user** to finalize the account creation process.
 
