@@ -2,7 +2,7 @@
 copyright = "Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved."
 spdx-license-identifier = "CC-BY-SA-4.0"
 title = "Repository"
-date = 2019-09-09T17:42:10+01:00
+date = 2021-01-13T15:09:39+0000
 weight = 20
 +++
 
@@ -11,6 +11,7 @@ weight = 20
 We will use [AWS CodeCommit][codecommit] to host your site's repository. CodeCommit is included in the [AWS Free Tier][codecommit-free-tier].
 
 #### CodeCommit helper
+
 The AWS Cloud9 development environment comes with AWS managed temporary credentials that are associated with your IAM user. You use these credentials with the AWS [git-remote-codecommit][git-remote-codecommit] tool (A Git Remote Helper that makes it easier to interact with AWS CodeCommit). This tool is installed in Cloud9 by default. You can install it on your own machine by following the [installation instructions][codecommit-helper-installation].
 
 #### Setting up your CodeCommit repository
@@ -32,6 +33,7 @@ The AWS Cloud9 development environment comes with AWS managed temporary credenti
     ```
     git subtree split -P resources/code/WildRydesVue -b WildRydesVue
     ```
+    **Note:** You may get the error message `git: 'subtree' is not a git command` on Cloud9 and Amazon Linux 2. Run `sudo yum install git-subtree` as a workaround, as this is not installed by default with `git` in these environments.
 1.  Create a new directory for your CodeCommit repo:
     ```
     mkdir ../WildRydesVue && cd ../WildRydesVue
