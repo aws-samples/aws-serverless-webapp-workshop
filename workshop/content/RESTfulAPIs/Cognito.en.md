@@ -21,7 +21,7 @@ In the Amazon API Gateway console, create a new Cognito user pool authorizer for
 1. Enter `WildRydes` for the Authorizer name.
 1. Select **Cognito** for the type.
 1. In the Region drop-down under **Cognito User Pool**, select the Region where you created your Cognito user pool in the User Management module (by default the current region should be selected).
-1. Enter `WildRydes` (or the name you gave your user pool) in the **Cognito User Pool** input.
+1. Enter `wildrydes` in the **Cognito User Pool** input, the name will auto-complete and allow you to select the name of the user pool that was generated when the user pool was created.
 1. Enter `Authorization` for the **Token Source**.
 1. Choose **Create**.
 

@@ -31,6 +31,7 @@ The AWS Cloud9 development environment comes with AWS managed temporary credenti
     ```
 1.  Split out the _WildRydesVue_ code into its own branch:
     ```
+    sudo yum install git-subtree -y
     git subtree split -P resources/code/WildRydesVue -b WildRydesVue
     ```
     **Note:** You may get the error message `git: 'subtree' is not a git command` on Cloud9 and Amazon Linux 2. Run `sudo yum install git-subtree` as a workaround, as this is not installed by default with `git` in these environments.
