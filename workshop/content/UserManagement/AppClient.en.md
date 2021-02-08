@@ -21,7 +21,7 @@ A new App client has been created by the AWS Amplify build. Let's take a look at
 1. **Click** the new user pool to open the Pool Details page
 1. From the Pool Details page, select **App clients** from the **General settings** section in the left navigation bar.
 
-1. You will see that a new App client has been generated.  Your web application is configured to use this App client via a config file located in `wildrydes/src/aws-exports.js`.
+1. You will see that a new App client has been generated.  Your web application is configured to use this App client via a config file located in `wild-rydes/src/aws-exports.js`.
 
 
 #### How it Works: 

@@ -36,7 +36,7 @@ The AWS Cloud9 development environment comes with AWS managed temporary credenti
     **Note:** You may get the error message `git: 'subtree' is not a git command` on Cloud9 and Amazon Linux 2. Run `sudo yum install git-subtree` as a workaround, as this is not installed by default with `git` in these environments.
 1.  Create a new directory for your CodeCommit repo:
     ```
-    mkdir ../WildRydesVue && cd ../WildRydesVue
+    mkdir ../wild-rydes && cd ../wild-rydes
     ```
 1.  Initialize a new git repository:
     ```
