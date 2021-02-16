@@ -13,7 +13,7 @@ Next you'll use the [AWS Amplify Console][amplify-console] to deploy the website
 **:white_check_mark: Step-by-step directions**
 
 1. Launch the [Amplify Console][amplify-console-console]
-1. Underneath **Get Started**, you'll find a section titled **Host your web app". Click the **Get started** button within that section.
+1. Underneath **Get Started**, you'll find a section titled **Host your web app**. Click the **Get started** button within that section.
 {{% notice note %}}
 Depending on your console and account settings, you may not see the **Get Started** prompt. In this case, click on the **AWS Amplify** title link in the top of the left side navigation.
 {{% /notice %}}
