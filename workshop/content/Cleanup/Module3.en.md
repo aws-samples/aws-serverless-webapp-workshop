@@ -24,7 +24,7 @@ Delete the AWS Lambda function, IAM role and Amazon DynamoDB table you created i
 1. Select **Roles** from the navigation menu.
 1. Type `WildRydesLambda` into the filter box.
 1. Select the role you created in module 3.
-1. From the **Role actions** drop-down, select **Delete role**.
+1. On the top left, click on the **Delete role** button.
 1. Choose **Yes, Delete** when prompted to confirm.
 
 #### DynamoDB Table
