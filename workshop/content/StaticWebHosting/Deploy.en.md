@@ -24,7 +24,10 @@ Depending on your console and account settings, you may not see the **Get Starte
 Now you need to create a new service role with the permissions to deploy the application backend.  
 
 1. Click on **Create new role**, check that **Amplify** is selected and click **Next permissions**, click **Next: Tags**, click **Next: Review**.  
-1. Give the Role a new name: `wildrydes-backend-role` and click **Create role**.  Close this tab and return to the AWS Amplify Build configure console.
+1. Give the Role a new name: `wildrydes-backend-role` and click **Create role**.
+1. Search for `wildrydes-backend-role` from the search filter, and click the role name. 
+1. Click **Attach policies** under the **Permissions** tab, search for `AWSCodeCommitReadOnly` policy, click on the checkbox next to the policy name, and click **Attach Policy**.
+1. Close this tab and return to the AWS Amplify Build configure console.
 
 1. Refresh the role list by clicking on the circular arrow button, and select the role created in the step above.
     
