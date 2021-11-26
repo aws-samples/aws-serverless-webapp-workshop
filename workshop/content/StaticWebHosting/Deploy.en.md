@@ -13,13 +13,13 @@ Next you'll use the [AWS Amplify Console][amplify-console] to deploy the website
 **:white_check_mark: Step-by-step directions**
 
 1. Launch the [Amplify Console][amplify-console-console]
-1. Underneath **Get Started**, you'll find a section titled **Host your web app". Click the **Get started** button within that section.
+1. Underneath **Get Started**, you'll find a section titled **"Host your web app"**. Click the **Get started** button within that section.
 {{% notice note %}}
 Depending on your console and account settings, you may not see the **Get Started** prompt. In this case, click on the **AWS Amplify** title link in the top of the left side navigation.
 {{% /notice %}}
 1. Select *AWS CodeCommit* and choose **Continue**
 1. From the dropdown select the *Repository* and *Master Branch* created today and select **Next**
-1. Amplify will detect that the application has an existing Amplify backend. Select **Create New Environment** and name it `prod` (all lowercase).
+1. Amplify will detect that the application has an existing Amplify backend. Under **Environment** click the dropdown and select **Create New Environment** and name it `prod` (all lowercase).
 
 Now you need to create a new service role with the permissions to deploy the application backend.  
 
@@ -31,7 +31,7 @@ Now you need to create a new service role with the permissions to deploy the app
 
 1. Refresh the role list by clicking on the circular arrow button, and select the role created in the step above.
     
-    ![Amplify Repository configuration](/images/amplifyConsole-setup-new1.png)
+    ![Amplify Repository configuration](/images/amplifyConsole-setup.png)
 1. Select **Next**
 1. On the **Review** page select **Save and deploy**
     
