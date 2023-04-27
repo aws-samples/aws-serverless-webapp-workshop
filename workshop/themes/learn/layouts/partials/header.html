@@ -7,7 +7,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Params.baseURL }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  {{ .Hugo.Generator }}
+  {{ hugo.Generator }}
   {{ partial "meta.html" . }}
   {{ partial "favicon.html" . }}
   <title>{{ .Title }} :: {{ .Site.Title }}</title>

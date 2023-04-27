@@ -110,7 +110,7 @@ export default {
 .page-auth{
   width: 100vw;
   height: 100vh;
-  background-image: url(~/images/background.png);
+  background-image: url(/images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
