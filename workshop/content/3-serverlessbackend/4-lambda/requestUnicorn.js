@@ -1,9 +1,9 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
 
-const { randomBytes } = require('crypto');
-const { DynamoDBClient, PutItemCommand } = require('@aws-sdk/client-dynamodb');
-const { marshall } = require('@aws-sdk/util-dynamodb');
+import { randomBytes } from 'crypto';
+import { DynamoDBClient, PutItemCommand } from '@aws-sdk/client-dynamodb';
+import { marshall } from '@aws-sdk/util-dynamodb';
 
 const ddbClient = new DynamoDBClient({ region: 'us-east-1' }); // Update with your desired region
 
@@ -25,7 +25,7 @@ const fleet = [
   },
 ];
 
-exports.handler = async (event) => {
+export async function handler (event) {
   if (!event.requestContext.authorizer) {
     return errorResponse('Authorization not configured', event.requestContext.requestId);
   }
